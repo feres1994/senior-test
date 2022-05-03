@@ -56,13 +56,17 @@ useEffect(() => {
   )()
   }, [])
   
- 
+ const deleteItem = (id) => {
+     const items = products.products.filter(el => el.id !== id)
+     setProducts(getTicket(items))
+     
+ }
 
   return (
 
 
       <div>
-          { products?.products?.map((product,i) =>  <TicketItem item={product}   key={i} />)} </div>
+          { products?.products?.map((product,i) =>  <TicketItem item={product}   key={i}  deleteItem={() => deleteItem(product.id)} />)} </div>
           
   )
        

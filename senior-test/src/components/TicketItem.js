@@ -10,13 +10,16 @@ import {
   } from "@material-ui/core";
   
  
-export default function TicketItem({item}) {
+export default function TicketItem({item, deleteItem}) {
 
 
 
   return (
 <div>
 {item.product} 
+<button  onClick={deleteItem} >
+    delete
+</button>
 </div>
        
             
