@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react'
 import { v4 as uuidv4 } from 'uuid';
 import TicketItem from './TicketItem'
+import AddProduct from "./AddProduct"
 import getTicket from '../services/get-ticket'
 
 import {
@@ -44,6 +45,7 @@ const [products, setProducts] = useState([{id: uuidv4(),product: 'water', type: 
 {id: uuidv4(),product: 'coffee', type: 'drinks', quantity: 4, unitPrice: 2},
 {id: uuidv4(),product: 'wine bottle', type: 'drinks', quantity: 1, unitPrice: 7}])
 
+const classes = useStyles()
 
 useEffect(() => {
   (
@@ -62,11 +64,21 @@ useEffect(() => {
      
  }
 
+ const addItem = (item) => {
+     const newItems = [...products.products, item]
+     setProducts(getTicket(newItems))
+ }
+
   return (
 
 
-      <div>
-          { products?.products?.map((product,i) =>  <TicketItem item={product}   key={i}  deleteItem={() => deleteItem(product.id)} />)} </div>
+      <Container>
+          <List>
+          { products?.products?.map((product,i) =>  <TicketItem item={product}   key={i} classes={classes} deleteItem={() => deleteItem(product.id)} />)} 
+          {products.totalPrice}
+          </List>
+          <AddProduct   addProduct={item => addItem(item)}/>
+          </Container>
           
   )
        

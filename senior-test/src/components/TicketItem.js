@@ -1,29 +1,40 @@
-import React, {useState} from 'react'
+import React from 'react'
 
 
 import {
     Button,
     Typography,
-    List,
     ListItem,
-    Container,
   } from "@material-ui/core";
   
  
-export default function TicketItem({item, deleteItem}) {
+export default function TicketItem({item, classes, deleteItem}) {
 
 
 
   return (
-<div>
-{item.product} 
-<button  onClick={deleteItem} >
-    delete
-</button>
-</div>
-       
+
+
+                <ListItem divider="bool" className={classes.list}>
+                
+                  <Typography
+                    className={classes.text}
+                   
+                    key={item.id}
+                  >
+                   {item.product}
+                  </Typography>
             
-              
+                  <Button
+                   
+                    color="secondary"
+                    variant="contained"
+                    className={classes.listButtons}
+                    onClick={deleteItem}
+                  >
+                    delete
+                  </Button>
+                </ListItem>
   )
       
   
