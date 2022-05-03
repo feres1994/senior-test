@@ -37,7 +37,7 @@ export default function BasicModal({addProduct}) {
         aria-describedby="modal-modal-description"
       >
         <Box sx={style} >
-         <ProductForm  addProduct={item => addProduct(item)}/>
+         <ProductForm  addProduct={item => addProduct(item)} closeModal={handleClose}/>
         </Box>
       </Modal>
     </div>
