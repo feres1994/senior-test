@@ -18,11 +18,35 @@ export default function TicketItem({item, classes, deleteItem}) {
                 <ListItem divider="bool" className={classes.list}>
                 
                   <Typography
-                    className={classes.text}
+                    className={classes.tableWidth}
                    
-                    key={item.id}
+               
                   >
                    {item.product}
+                  </Typography>
+
+                  <Typography
+                    className={classes.tableWidth}
+                   
+                  
+                  >
+                   {item.quantity}
+                  </Typography>
+
+                  <Typography
+                    className={classes.tableWidth}
+                   
+                  
+                  >
+                   {item.unitPrice}
+                  </Typography>
+
+                  <Typography
+                    className={classes.tableWidth}
+                   
+                  
+                  >
+                   {item.unitPrice * item.quantity}
                   </Typography>
             
                   <Button

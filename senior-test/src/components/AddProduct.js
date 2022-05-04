@@ -20,7 +20,7 @@ const style = {
 
 
 
-export default function BasicModal({addProduct}) {
+export default function BasicModal({addProduct,classes}) {
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
@@ -29,10 +29,12 @@ export default function BasicModal({addProduct}) {
 
   return (
     <div>
-      <Button onClick={handleOpen}>Open modal</Button>
+      <Button onClick={handleOpen} color="primary"   variant="contained"
+                    className={classes.listButtons}>Add Product</Button>
       <Modal
         open={open}
         onClose={handleClose}
+        color="primary"
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
       >

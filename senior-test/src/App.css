@@ -24,6 +24,11 @@
   color: white;
 }
 
+.absolute {
+  position: absolute !important;
+  top: 50px;
+  left: 50px;
+}
 .App-link {
   color: #61dafb;
 }

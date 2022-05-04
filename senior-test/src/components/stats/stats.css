@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.p-base-medium {
+ font-size: 12px;
+}
+.heading-3 {
+    font-size: 20px;
+    font-weight: bold;
+}
+.primary-bg-color{
+    background-color: #f5f6fb;
+}
+
+.secondary-bg-color{
+    background: white;
+}
+.info-bg-color {
+    background-color: #22ab32;
+}
+
+.primary-chart-color{
+    background-color: #8978ed;
+}
+
+.secondary-chart-color{
+    background-color: #ed7890;
+}
+
+.text-primary-dark{
+    color: #3a3a5f;
+}
+.text-primary-light{
+    color: #787895
+}
+.text-info-color {
+    color:  #22ab32;
+}
+
+.vh-100 {
+height: 100vh
+}
+.w-100 {
+    width: 100%
+}
+.radius-8 {
+    border-radius: 8px;
+}
+.radius-16{
+    border-radius: 16px;
+}
+.padding-8 {
+    padding: 8px;
+}
+.m-l-8 {
+margin-left: 8px;
+}
+.m-r-8 {
+    margin-right: 8px;
+    }
+.padding-16 {
+    padding: 16px;
+}
+.m-t-24 {
+    margin-top: 24px;
+}
+.d-flex {
+    display: flex;
+}
+.flex-column{
+    flex-direction: column;
+}
+.justify-content-center{
+    justify-content: center;
+}
+
+.justify-content-between{
+    justify-content: space-between;
+}
+.align-items-center {
+    align-items: center;
+}
+.box-shadow {
+    box-shadow: 10px 19px 32px -14px rgba(20,3,3,0.43);
+    -webkit-box-shadow: 10px 19px 32px -14px rgba(20,3,3,0.43);
+    -moz-box-shadow: 10px 19px 32px -14px rgba(20,3,3,0.43);
+}
+/**custom style**/
+
+.stats-container {
+    width: 350px;
+    height: 200px;
+    border:solid
+}
+
+.icon-container{
+    width: 40px;
+    height: 40px;
+}
+
+.big-number-container {
+    text-align: left;
+}
+
+.chart-container {
+    padding: 8px 24px;
+}
+
