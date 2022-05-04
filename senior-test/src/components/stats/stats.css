@@ -17,6 +17,9 @@
 .secondary-bg-color{
     background: white;
 }
+.neutral-bg-color {
+    background-color:  #dddfe8
+}
 .info-bg-color {
     background-color: #22ab32;
 }
@@ -39,6 +42,7 @@
     color:  #22ab32;
 }
 
+
 .vh-100 {
 height: 100vh
 }
@@ -60,6 +64,9 @@ margin-left: 8px;
 .m-r-8 {
     margin-right: 8px;
     }
+.m-r-4 {
+    margin-right: 4px;
+}
 .padding-16 {
     padding: 16px;
 }
@@ -83,16 +90,14 @@ margin-left: 8px;
     align-items: center;
 }
 .box-shadow {
-    box-shadow: 10px 19px 32px -14px rgba(20,3,3,0.43);
-    -webkit-box-shadow: 10px 19px 32px -14px rgba(20,3,3,0.43);
-    -moz-box-shadow: 10px 19px 32px -14px rgba(20,3,3,0.43);
+    box-shadow: 16px 14px 41px -20px rgba(20,3,3,0.52);
+    -webkit-box-shadow: 16px 14px 41px -20px rgba(20,3,3,0.52);
+    -moz-box-shadow: 16px 14px 41px -20px rgba(20,3,3,0.52);
 }
 /**custom style**/
 
 .stats-container {
-    width: 350px;
-    height: 200px;
-    border:solid
+    width: 315px;
 }
 
 .icon-container{
@@ -106,5 +111,35 @@ margin-left: 8px;
 
 .chart-container {
     padding: 8px 24px;
+}
+
+.chart-element-container{
+    height: 60px;
+}
+
+.chart-element{
+    width: 5px;
+    height: 100%;
+}
+.element{
+    
+    height: 50%;
+    width: 100%;
+    margin-bottom: 4px;
+}
+
+.total-chart {
+    width: 100px;
+    align-items: flex-end
+}
+.total-chart-element{
+    width: 50%;
+    height: 5px;
+    
+}
+
+.total-chart-element > div {
+width: 60%;
+height: 100%;
 }
 
